@@ -37,3 +37,5 @@ const fetchColor = () => {
 colorSelect.addEventListener("change", fetchColor);
 
 dropdown.addEventListener("change", fetchColor);
+
+window.onload = fetchColor;
