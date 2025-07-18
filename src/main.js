@@ -1,4 +1,4 @@
-import "../src/style.css";
+import "./style.css";
 
 const colorSelect = document.getElementById("your-color");
 const dropdown = document.getElementById("dropdown");
