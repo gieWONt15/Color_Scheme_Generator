@@ -5,4 +5,12 @@ export default defineConfig({
     build: {
         outDir: "dist",
     },
+    server: {
+        fs: {
+            strict: false
+        }
+    },
+    define: {
+        global: 'globalThis'
+    }
 });
