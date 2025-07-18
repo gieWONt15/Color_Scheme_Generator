@@ -5,11 +5,52 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <title>Color Scheme Generator</title>
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">
+
+    <header>
+      <div id="color-sample">
+        <input type="color" id="your-color">
+      </div>
+      <select name="color-scheme" id="dropdown">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+      </select>
+      <button id="color_scheme-btn">Get color scheme</button>
+    </header>
+
+
+    <main>
+      <section id="color_1"></section>
+      <section id="color_2"></section>
+      <section id="color_3"></section>
+      <section id="color_4"></section>
+      <section id="color_5"></section>
+    </main>
+
+
+    <footer>
+      <span id="hex_1"></span>
+      <span id="hex_2"></span>
+      <span id="hex_3"></span>
+      <span id="hex_4"></span>
+      <span id="hex_5"></span>
+    </footer>
+
+  </div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
